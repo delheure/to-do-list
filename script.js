@@ -14,7 +14,8 @@ const addTodo = e => {
   const btnChk = document.createElement("button");
   btnChk.setAttribute("class", "btn_check");
   btnChk.addEventListener("click", e => {
-    e.target.classList.toggle("on");
+    const chkList = e.target.parentElement;
+    chkList.classList.toggle("on");
   });
 
   const btnDel = document.createElement("button");

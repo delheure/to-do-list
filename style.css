@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+:root {
+  --main-color: #7370d3;
+  --bg-color: #bcbeee;
+  
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -83,6 +89,10 @@ body {
   display: flex;
   align-items: center;
   position: relative;
+}
+
+.todo_list li.on {
+  color: #999;
 }
 
 .todo_list li .btn_check {
